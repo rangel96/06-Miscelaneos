@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/bootstrap-5.0.0-beta1/css/bootstrap.min.css",
+              "src/assets/fontawesome-free-5.15.1/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/bootstrap-5.0.0-beta1/js/bootstrap.min.js",
+              "src/assets/fontawesome-free-5.15.1/js/all.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "miscelaneos"
+  "defaultProject": "miscelaneos",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,52 @@
+<div [ngSwitch]="style">
+  <div *ngSwitchCase="'primary'"> Primary
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert—check it out!
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'secondary'"> Secondary
+    <div class="alert alert-secondary" role="alert">
+      A simple secondary alert—check it out!
+    </div>
+  </div>
+
+  <dvi *ngSwitchCase="'success'"> Success
+    <div class="alert alert-success" role="alert">
+      A simple success alert—check it out!
+    </div>
+  </dvi>
+
+  <div *ngSwitchCase="'danger'">Danger
+    <div class="alert alert-danger" role="alert">
+      A simple danger alert—check it out!
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'warning'">Warning
+    <div class="alert alert-warning" role="alert">
+      A simple warning alert—check it out!
+    </div>
+  </div>
+
+  <div *ngSwitchDefault>Info
+    <div class="alert alert-info" role="alert">
+      A simple info alert—check it out!
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-outline-success btn-sm" color="
+" (click)="changeStyle(-1)">Previous</button>
+&nbsp;
+<button type="button" class="btn btn-outline-primary btn-sm" (click)="changeStyle(1)">Next</button>
+
+<hr>
+
+<h5>Alternando dos colores</h5>
+<div id="mi_mensaje">
+  <p>¡Hola mundo!</p>
+</div>
+
+<button type="button" class="btn btn-outline-success btn-sm" (click)="cambiaDeColor()">Iniciar</button>
+&nbsp;
+<button type="button" class="btn btn-outline-danger btn-sm" (click)="detenerCambioDeColor();">Detener</button>

@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+
+    <div class="btn-group">
+      <a [routerLink]="['nuevo', 'params']" routerLinkActive="active" class="btn btn-primary" aria-current="page">Nuevo</a>
+      <a [routerLink]="['editar']" routerLinkActive="active" class="btn btn-primary" aria-current="page">Editar</a>
+      <a [routerLink]="['detalle']" routerLinkActive="active" class="btn btn-primary" aria-current="page">Detalle</a>
+    </div>
+
+  </div>
+</div>
+
+<router-outlet></router-outlet>
